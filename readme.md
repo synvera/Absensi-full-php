@@ -1,4 +1,4 @@
-### 🎵 SPOTIFY · DEVELOPER SESSION
+### SPOTIFY · DEVELOPER SESSION
 > **TOP TRACKS** yang menemani developer pertama merangkai fondasi awal AbsensiKu
 
 [![01 · About You](https://img.shields.io/badge/01%20%C2%B7%20About%20You-Cari%20di%20Spotify-808080?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/About%20You)
@@ -12,8 +12,6 @@
 [![05 · Tunggulah Aku Di Jakarta](https://img.shields.io/badge/05%20%C2%B7%20Tunggulah%20Aku%20Di%20Jakarta-Cari%20di%20Spotify-9F0000?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta)
 
 [![06 · Jatuh Suka](https://img.shields.io/badge/06%20%C2%B7%20Jatuh%20Suka-Cari%20di%20Spotify-0020C8?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Jatuh%20Suka)
-
-*Warna mengikuti palet yang diberikan; abu-abu untuk About You menggunakan `#808080` sebagai representasi abu-abu netral. Tautan membuka hasil pencarian Spotify karena artis/tautan track spesifik belum dicantumkan.*
 
 # AbsensiKu
 
