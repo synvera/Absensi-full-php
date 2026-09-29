@@ -4,6 +4,8 @@ Aplikasi absensi siswa berbasis PHP dan MySQL/MariaDB. Aplikasi ini masih berada
 
 > **Status proyek:** versi awal/prototipe. Baca bagian [Catatan untuk tim](#catatan-untuk-tim-sebelum-digunakan) sebelum menyiapkan lingkungan bersama atau memakai data nyata.
 
+> **Disclaimer:** Proyek ini merupakan versi pertama yang masih dalam tahap awal dan belum melalui revisi menyeluruh. Fitur, alur kerja, dan tampilan yang ada disediakan sebagai bahan diskusi bersama tim untuk evaluasi dan pengembangan selanjutnya, bukan sebagai versi final atau siap produksi.
+
 ## Daftar Isi
 
 - [Fitur dan alur kerja](#fitur-dan-alur-kerja)
