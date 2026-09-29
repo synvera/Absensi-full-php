@@ -26,7 +26,7 @@ include 'config/koneksi.php';
             <a href="dashboard.php">Dashboard Absensi</a>
             <a href="data_siswa.php">Input data siswa</a>
             <a href="input_absen.php">Input Absensi</a>
-            <a href="logout.php">Logout</a>
+            <a href="proses/logout.php">Logout</a>
         </nav>
     </header>
     <!-- Area tombol yang akan dihilangkan saat menjadi PDF -->

@@ -29,6 +29,12 @@ Alur kerja yang disarankan: siapkan daftar siswa terlebih dahulu, input absensi,
 
 Simpan screenshot di folder `docs/screenshots/` dengan nama berikut. Gambar akan tampil otomatis setelah file diletakkan di lokasi yang sesuai.
 
+### Login page
+
+File: `docs/screenshots/login.png`
+
+![Screenshot halaman login](docs/screenshots/login.png)
+
 ### Dashboard
 
 File: `docs/screenshots/dashboard.png`
@@ -81,16 +87,76 @@ Untuk tampilan yang konsisten, ambil gambar setelah halaman selesai dimuat dan g
 
 ### Prasyarat
 
-- PHP CLI dan ekstensi `mysqli` aktif.
+- PHP CLI terpasang. Tim disarankan memakai PHP 8.x dengan versi minor yang sama agar lingkungan pengembangan konsisten; proyek ini belum memiliki matriks versi PHP yang diuji secara resmi.
+- Ekstensi `mysqli` aktif pada PHP yang digunakan oleh server web.
 - MySQL atau MariaDB berjalan.
 - Browser modern.
 
-### Siapkan database
+Sebelum memulai, buka terminal di komputer masing-masing dan cek PHP:
 
-1. Buat database `absensi_pure_html_php`.
-2. Periksa dan koreksi `config/database.sql` sebelum dijalankan. Saat ini file tersebut belum dapat langsung diimpor: komentar `//` bukan komentar SQL yang valid, dan perintah `INSERT` memakai nama kolom `pasword` sedangkan tabel mendefinisikan `password`.
-3. Jalankan SQL yang sudah dikoreksi melalui klien MySQL/MariaDB pilihan tim. Skrip tersebut membuat tabel `tabel_sekretaris`, `tabel_siswa`, dan `tabel_absensi`, serta berisi satu akun sekretaris contoh.
-4. Sesuaikan host, user database, password database, dan nama database di `config/koneksi.php` dengan lingkungan lokal. Jangan menaruh kredensial pribadi pada repositori bersama.
+```bash
+php -v
+php --ri mysqli
+```
+
+Perintah pertama menampilkan versi PHP CLI, sedangkan perintah kedua memastikan ekstensi `mysqli` tersedia. Jika perintah `php` tidak ditemukan, instal PHP CLI sesuai sistem operasi atau gunakan paket pengembangan lokal seperti XAMPP/Laragon, lalu buka terminal baru dan ulangi pemeriksaan. Jika `mysqli` tidak ditemukan, aktifkan atau instal ekstensi tersebut untuk versi PHP yang dipakai, kemudian cek kembali.
+
+Pastikan juga server web memakai instalasi PHP yang sama dengan hasil `php -v`; PHP CLI dan PHP yang terhubung ke Apache dapat memiliki versi atau ekstensi berbeda. Belum ada skrip Composer atau pengelola dependensi PHP yang harus dijalankan pada tahap proyek ini.
+
+### Nyalakan MySQL dengan Laragon
+
+1. Buka Laragon.
+2. Pilih **Start All** untuk menyalakan layanan lokal. Jika hanya perlu database, gunakan menu MySQL untuk memulai layanan MySQL/MariaDB saja; nama menu dapat berbeda antarversi Laragon.
+3. Pastikan indikator MySQL menunjukkan layanan berjalan. Jika gagal, periksa pesan Laragon dan pastikan port MySQL (umumnya `3306`) tidak sedang dipakai layanan lain.
+4. Buka **Menu > Laragon > Terminal** agar perintah MySQL menggunakan program dan konfigurasi yang disediakan Laragon.
+
+### Buat database dengan Laragon dan phpMyAdmin (disarankan)
+
+Metode yang disarankan untuk tim adalah menyalakan MySQL dari Laragon, lalu menjalankan SQL melalui phpMyAdmin. Gunakan isi `config/database.sql` sebagai sumber skema dan data awal. File tersebut berisi perintah untuk membuat database `absensi_pure_html_php`, memilih database itu, membuat tabel sekretaris/siswa/absensi, dan memasukkan akun contoh. Jadi, database tidak perlu dibuat manual terlebih dahulu.
+
+Sebelum menjalankannya, buka `config/database.sql` dan koreksi dua masalah yang ada saat ini: ubah komentar `//` menjadi komentar SQL yang valid (misalnya `-- komentar`) dan ubah kolom `pasword` pada perintah `INSERT` menjadi `password`. Sampai dua hal ini dibetulkan, file belum bisa dijalankan dengan sukses. Pastikan juga nilai akun contoh hanya digunakan untuk pengembangan lokal.
+
+Ikuti langkah berikut:
+
+1. Di Laragon, pilih **Start All** dan pastikan MySQL/MariaDB berjalan.
+2. Buka phpMyAdmin melalui menu Laragon (**Menu > MySQL > phpMyAdmin**, nama menu bisa berbeda antarversi) atau kunjungi `http://localhost/phpmyadmin` jika phpMyAdmin sudah tersedia.
+3. Login menggunakan akun MySQL lokal, biasanya `root`; pada instalasi Laragon tertentu password-nya kosong.
+4. Buka tab **SQL**. Tidak perlu membuat atau memilih database terlebih dahulu karena file SQL sudah berisi perintah `CREATE DATABASE` dan `USE`.
+5. Buka `config/database.sql` di editor, salin seluruh isinya setelah koreksi di atas, lalu tempelkan ke kolom query pada tab **SQL**.
+6. Klik **Go/Kirim** untuk menjalankan query. Pastikan phpMyAdmin menampilkan pesan sukses dan database `absensi_pure_html_php` muncul pada daftar database.
+
+Skrip membuat database `absensi_pure_html_php`, tabel `tabel_sekretaris`, `tabel_siswa`, dan `tabel_absensi`, serta satu akun sekretaris contoh. Jalankan pada database baru satu kali; skrip belum dirancang untuk diimpor berulang kali.
+
+### Alternatif: jalankan melalui MySQL CLI
+
+Jika tidak menggunakan phpMyAdmin, buka **Menu > Laragon > Terminal** dan periksa klien MySQL:
+
+```bash
+mysql --version
+mysql -u root -p
+```
+
+Masukkan password MySQL saat diminta. Jika akun `root` Laragon tidak menggunakan password, tekan Enter pada prompt password. Untuk menjalankan file yang sama, buka terminal sistem operasi di direktori utama proyek, yaitu direktori yang berisi folder `config/`:
+
+```bash
+mysql -u root -p < config/database.sql
+```
+
+Masukkan password MySQL saat diminta. Jika akun `root` Laragon tidak menggunakan password, gunakan perintah tanpa `-p`:
+
+```bash
+mysql -u root < config/database.sql
+```
+
+Alternatifnya, setelah masuk ke prompt MySQL, jalankan file yang sama dengan perintah `SOURCE` dan path absolut proyek:
+
+```sql
+SOURCE C:/path/ke/proyek/config/database.sql;
+```
+
+Pada Windows, gunakan garis miring `/` pada path seperti contoh. Pada Linux/macOS, gunakan path absolut yang sesuai, misalnya `SOURCE /home/user/proyek/config/database.sql;`. Jalankan proses ini satu kali pada database baru; skrip belum dirancang untuk diimpor berulang kali.
+
+Terakhir, sesuaikan host, user database, password database, dan nama database di `config/koneksi.php` dengan konfigurasi Laragon. Jangan menaruh kredensial pribadi pada repositori bersama. Untuk memastikan PHP tersambung ke database, jalankan aplikasi dan akses halaman yang membaca database.
 
 Akun contoh yang tercantum di skrip SQL adalah `sekretaris@gmail.com`; password contoh dan kode khusus hanya untuk pengembangan lokal. Ganti sebelum aplikasi dipakai bersama, dan jangan gunakan kredensial contoh untuk data nyata.
 
@@ -99,10 +165,10 @@ Akun contoh yang tercantum di skrip SQL adalah `sekretaris@gmail.com`; password 
 Dari direktori utama proyek:
 
 ```bash
-php -S localhost:1234
+php -S localhost:8000
 ```
 
-Buka [http://localhost:1234](http://localhost:1234) di browser. Halaman login aplikasi adalah `index.php`.
+Buka [http://localhost:8000](http://localhost:8000) di browser. Halaman login aplikasi adalah `index.php`.
 
 ## Panduan penggunaan
 
@@ -136,9 +202,12 @@ Temuan berikut terlihat dari kode saat dokumentasi ini dibuat dan perlu ditangan
 - **Verifikasi data diperlukan.** Pastikan NIS unik dan tidak kosong jika aturan kelas mengharuskannya; skema saat ini belum menetapkan batasan tersebut.
 
 ### Prioritas tindak lanjut
+Mohon luangkan waktu untuk benar-benar melihat dan memeriksa keseluruhan proyek ini secara saksama. Tolong identifikasi secara kritis apa saja yang masih kurang dan evaluasi bagian mana saja yang harus dimodifikasi atau ditingkatkan. Pengecekan dari teman-teman sangat krusial sebelum kita melangkah lebih jauh!
 
 1. Perbaiki dan uji skrip SQL pada database kosong.
 2. Samakan rute login/logout dan terapkan pemeriksaan sesi ke semua halaman internal.
 3. Gunakan tanggal pilihan pada query daftar absensi, lalu uji input untuk hari ini dan tanggal lain.
 4. Tambahkan validasi data dan kebijakan keamanan kredensial sebelum penggunaan dengan data siswa nyata.
 5. Ambil empat screenshot untuk folder `docs/screenshots/` setelah alur utama selesai diuji.
+6. Tinjauan & Modifikasi Bersama (Team Review): Setelah poin 1-5 berjalan, lakukan simulasi penggunaan secara menyeluruh. Catat setiap bug, fitur yang terlewat, atau alur yang dirasa kurang pas, lalu segera diskusikan modifikasi apa yang harus kita terapkan.
+7. Kedepankan kominkasi dan dokumentasi dalam pembuatan project ini agar tidak `Misunderstanding`

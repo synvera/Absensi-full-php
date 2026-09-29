@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['status'])) {
             <a href="dashboard.php">Dashboard Absensi</a>
             <a href="data_siswa.php">Input data siswa</a>
             <a href="laporan_siswa.php">laporan Absensi</a>
-            <a href="logout.php">Logout</a>
+            <a href="proses/logout.php">Logout</a>
         </nav>
     </header>
     

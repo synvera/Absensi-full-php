@@ -19,7 +19,7 @@ $tanggal_hari_ini = date('Y-m-d'); // Ambil tanggal hari ini untuk query
             <a href="data_siswa.php">Input data siswa</a>
             <a href="input_absen.php">Input Absensi</a>
             <a href="laporan_siswa.php">laporan Absensi</a>
-            <a href="logout.php">Logout</a>
+            <a href="proses/logout.php">Logout</a>
         </nav>
     </header>
 <main>

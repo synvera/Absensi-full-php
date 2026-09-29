@@ -46,7 +46,7 @@ if (isset($_GET['hapus'])) {
             <a href="dashboard.php">Dashboard Absensi</a>
             <a href="input_absen.php">Input Absensi</a>
             <a href="laporan_siswa.php">laporan Absensi</a>
-            <a href="logout.php">Logout</a>
+            <a href="proses/logout.php">Logout</a>
         </nav>
     </header>
     <div class="container">
