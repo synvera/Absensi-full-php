@@ -1,6 +1,8 @@
 <!-- Dashboard untuk melihat siswa -->
 <?php
 include 'config/koneksi.php';
+
+date_default_timezone_set('Asia/Jakarta');
 $tanggal_hari_ini = date('Y-m-d'); // Ambil tanggal hari ini untuk query
 ?>
 <!DOCTYPE html>
@@ -13,7 +15,7 @@ $tanggal_hari_ini = date('Y-m-d'); // Ambil tanggal hari ini untuk query
 <body>
     <header style="display: flex; justify-content: space-between; align-items: center;">
         <h1>Dashboard absenku</h1>
-        <nav style="display: flex; gap: 15px;">
+        <nav style="display: flex; gap: 15px; align-items: center;" >
             <a href="data_siswa.php">Input data siswa</a>
             <a href="input_absen.php">Input Absensi</a>
             <a href="laporan_siswa.php">laporan Absensi</a>
@@ -64,4 +66,17 @@ $tanggal_hari_ini = date('Y-m-d'); // Ambil tanggal hari ini untuk query
     </table>
 </main>
 </body>
+<script>
+        function updateJam() {
+            const sekarang = new Date();
+            const jam = String(sekarang.getHours()).padStart(2, '0');
+            const menit = String(sekarang.getMinutes()).padStart(2, '0');
+            const detik = String(sekarang.getSeconds()).padStart(2, '0');
+            
+            document.getElementById('jam-digital').innerText = `${jam}:${menit}:${detik}`;
+        }
+
+        // Jalankan fungsi updateJam setiap 1000 milidetik (1 detik)
+        setInterval(updateJam, 1000);
+    </script>
 </html>
