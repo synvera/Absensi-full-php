@@ -18,7 +18,7 @@
 		<td colspan="2" bgcolor="#9F0000"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta"><font color="#FFFFFF"><strong>05 · Tunggulah Aku Di Jakarta</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
 	</tr>
 	<tr>
-		<td colspan="2" bgcolor="#902018"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Mantan%20Terindah"><font color="#FFFFFF"><strong>06 · Mantan Terindah</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Mantan%20Terindah"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+		<td colspan="2" bgcolor="#0020C8"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Jatuh%20Suka"><font color="#FFFFFF"><strong>06 · Jatuh Suka</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Jatuh%20Suka"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
 	</tr>
 </table>
 
