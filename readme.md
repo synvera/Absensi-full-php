@@ -1,7 +1,7 @@
 <div align="center">
 
 ### 🎵 SPOTIFY · DEVELOPER SESSION
-> **TOP TRACKS** yang menemani developer pertama merangkai fondasi awal AbsensiKu
+> **TOP TRACKS** yang menemani developer pertama merangkai Tahap awal AbsensiKu
 
 <a href="https://open.spotify.com/search/About%20You"><img src="https://img.shields.io/badge/01%20%C2%B7%20About%20You-Cari%20di%20Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white" /></a>
 <a href="https://open.spotify.com/search/The%20Cure"><img src="https://img.shields.io/badge/02%20%C2%B7%20The%20Cure-Cari%20di%20Spotify-674B59?style=for-the-badge&logo=spotify&logoColor=white" /></a>
