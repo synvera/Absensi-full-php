@@ -1,18 +1,90 @@
-### SPOTIFY · DEVELOPER SESSION
-> **TOP TRACKS** yang menemani developer pertama merangkai fondasi awal AbsensiKu
+<div align="center">
 
-[![01 · About You](https://img.shields.io/badge/01%20%C2%B7%20About%20You-Cari%20di%20Spotify-808080?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/About%20You)
+  <!-- CARD 1: About You -->
+  <a href="https://open.spotify.com/search/About%20You">
+    <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="300" rx="16" fill="#181818" />
+      <rect x="12" y="12" width="176" height="150" rx="12" fill="#808080" />
+      <text x="100" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">🎵</text>
+      <text x="20" y="195" fill="#1DB954" font-family="sans-serif" font-size="11" font-weight="bold">01 · TRACK</text>
+      <text x="20" y="220" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">About You</text>
+      <text x="20" y="240" fill="#A7A7A7" font-family="sans-serif" font-size="12">The 1975</text>
+      <rect x="20" y="260" width="160" height="28" rx="14" fill="#1DB954" />
+      <text x="100" y="278" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cari di Spotify</text>
+    </svg>
+  </a>
 
-[![02 · The Cure](https://img.shields.io/badge/02%20%C2%B7%20The%20Cure-Cari%20di%20Spotify-674B59?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/The%20Cure)
+  <!-- CARD 2: The Cure -->
+  <a href="https://open.spotify.com/search/The%20Cure">
+    <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="300" rx="16" fill="#181818" />
+      <rect x="12" y="12" width="176" height="150" rx="12" fill="#674B59" />
+      <text x="100" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">🎵</text>
+      <text x="20" y="195" fill="#1DB954" font-family="sans-serif" font-size="11" font-weight="bold">02 · TRACK</text>
+      <text x="20" y="220" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">The Cure</text>
+      <text x="20" y="240" fill="#A7A7A7" font-family="sans-serif" font-size="12">Spotify Track</text>
+      <rect x="20" y="260" width="160" height="28" rx="14" fill="#1DB954" />
+      <text x="100" y="278" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cari di Spotify</text>
+    </svg>
+  </a>
 
-[![03 · Heaven](https://img.shields.io/badge/03%20%C2%B7%20Heaven-Cari%20di%20Spotify-535353?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Heaven)
+  <!-- CARD 3: Heaven -->
+  <a href="https://open.spotify.com/search/Heaven">
+    <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="300" rx="16" fill="#181818" />
+      <rect x="12" y="12" width="176" height="150" rx="12" fill="#535353" />
+      <text x="100" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">🎵</text>
+      <text x="20" y="195" fill="#1DB954" font-family="sans-serif" font-size="11" font-weight="bold">03 · TRACK</text>
+      <text x="20" y="220" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Heaven</text>
+      <text x="20" y="240" fill="#A7A7A7" font-family="sans-serif" font-size="12">Spotify Track</text>
+      <rect x="20" y="260" width="160" height="28" rx="14" fill="#1DB954" />
+      <text x="100" y="278" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cari di Spotify</text>
+    </svg>
+  </a>
 
-[![04 · Abadi](https://img.shields.io/badge/04%20%C2%B7%20Abadi-Cari%20di%20Spotify-585252?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Abadi)
+  <!-- CARD 4: Abadi -->
+  <a href="https://open.spotify.com/search/Abadi">
+    <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="300" rx="16" fill="#181818" />
+      <rect x="12" y="12" width="176" height="150" rx="12" fill="#585252" />
+      <text x="100" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">🎵</text>
+      <text x="20" y="195" fill="#1DB954" font-family="sans-serif" font-size="11" font-weight="bold">04 · TRACK</text>
+      <text x="20" y="220" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Abadi</text>
+      <text x="20" y="240" fill="#A7A7A7" font-family="sans-serif" font-size="12">Spotify Track</text>
+      <rect x="20" y="260" width="160" height="28" rx="14" fill="#1DB954" />
+      <text x="100" y="278" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cari di Spotify</text>
+    </svg>
+  </a>
 
-[![05 · Tunggulah Aku Di Jakarta](https://img.shields.io/badge/05%20%C2%B7%20Tunggulah%20Aku%20Di%20Jakarta-Cari%20di%20Spotify-9F0000?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta)
+  <!-- CARD 5: Tunggulah Aku Di Jakarta -->
+  <a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta">
+    <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="300" rx="16" fill="#181818" />
+      <rect x="12" y="12" width="176" height="150" rx="12" fill="#9F0000" />
+      <text x="100" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">🎵</text>
+      <text x="20" y="195" fill="#1DB954" font-family="sans-serif" font-size="11" font-weight="bold">05 · TRACK</text>
+      <text x="20" y="218" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">Tunggulah Aku Di...</text>
+      <text x="20" y="240" fill="#A7A7A7" font-family="sans-serif" font-size="12">Spotify Track</text>
+      <rect x="20" y="260" width="160" height="28" rx="14" fill="#1DB954" />
+      <text x="100" y="278" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cari di Spotify</text>
+    </svg>
+  </a>
 
-[![06 · Jatuh Suka](https://img.shields.io/badge/06%20%C2%B7%20Jatuh%20Suka-Cari%20di%20Spotify-0020C8?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Jatuh%20Suka)
+  <!-- CARD 6: Jatuh Suka -->
+  <a href="https://open.spotify.com/search/Jatuh%20Suka">
+    <svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="200" height="300" rx="16" fill="#181818" />
+      <rect x="12" y="12" width="176" height="150" rx="12" fill="#0020C8" />
+      <text x="100" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">🎵</text>
+      <text x="20" y="195" fill="#1DB954" font-family="sans-serif" font-size="11" font-weight="bold">06 · TRACK</text>
+      <text x="20" y="220" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Jatuh Suka</text>
+      <text x="20" y="240" fill="#A7A7A7" font-family="sans-serif" font-size="12">Spotify Track</text>
+      <rect x="20" y="260" width="160" height="28" rx="14" fill="#1DB954" />
+      <text x="100" y="278" fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cari di Spotify</text>
+    </svg>
+  </a>
 
+</div>
 # AbsensiKu
 
 Aplikasi absensi siswa berbasis PHP dan MySQL/MariaDB. Aplikasi ini masih berada pada tahap awal: antarmuka belum mendapatkan desain CSS khusus dan masih berupa HTML sederhana dengan logika PHP. Beberapa elemen memakai style inline dasar, tetapi belum ada sistem desain atau stylesheet untuk tampilan yang konsisten. Aplikasi menyediakan halaman untuk melihat status kehadiran hari ini, mengelola daftar siswa, mencatat absensi, dan mencetak rekapitulasi.
