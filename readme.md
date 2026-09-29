@@ -1,14 +1,28 @@
-| **SPOTIFY · DEV SESSION** | **6 TRACKS** |
-|:--|--:|
-| **Soundtrack tahap awal AbsensiKu** | Diputar saat fondasi pertama dirangkai |
-| [01 · About You](https://open.spotify.com/search/About%20You) | [Cari di Spotify](https://open.spotify.com/search/About%20You) |
-| [02 · The Cure](https://open.spotify.com/search/The%20Cure) | [Cari di Spotify](https://open.spotify.com/search/The%20Cure) |
-| [03 · Heaven](https://open.spotify.com/search/Heaven) | [Cari di Spotify](https://open.spotify.com/search/Heaven) |
-| [04 · Abadi](https://open.spotify.com/search/Abadi) | [Cari di Spotify](https://open.spotify.com/search/Abadi) |
-| [05 · Tunggulah Aku Di Jakarta](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta) | [Cari di Spotify](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta) |
-| [06 · Mantan Terindah](https://open.spotify.com/search/Mantan%20Terindah) | [Cari di Spotify](https://open.spotify.com/search/Mantan%20Terindah) |
+<table>
+	<tr>
+		<td colspan="2" bgcolor="#191414"><font color="#FFFFFF"><strong>SPOTIFY · DEVELOPER SESSION</strong><br><strong>TOP TRACKS</strong> yang menemani developer pertama merangkai fondasi awal AbsensiKu</font></td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#808080"><font color="#FFFFFF"><a href="https://open.spotify.com/search/About%20You"><font color="#FFFFFF"><strong>01 · About You</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/About%20You"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#674B59"><font color="#FFFFFF"><a href="https://open.spotify.com/search/The%20Cure"><font color="#FFFFFF"><strong>02 · The Cure</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/The%20Cure"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#535353"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Heaven"><font color="#FFFFFF"><strong>03 · Heaven</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Heaven"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#585252"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Abadi"><font color="#FFFFFF"><strong>04 · Abadi</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Abadi"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#9F0000"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta"><font color="#FFFFFF"><strong>05 · Tunggulah Aku Di Jakarta</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#902018"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Mantan%20Terindah"><font color="#FFFFFF"><strong>06 · Mantan Terindah</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Mantan%20Terindah"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
+	</tr>
+</table>
 
-*Catatan soundtrack developer pertama. Tautan membuka hasil pencarian Spotify karena artis/tautan lagu spesifik belum dicantumkan.*
+*Warna mengikuti palet yang diberikan; abu-abu untuk About You menggunakan `#808080` sebagai representasi abu-abu netral. Tautan membuka hasil pencarian Spotify karena artis/tautan track spesifik belum dicantumkan.*
 
 # AbsensiKu
 
