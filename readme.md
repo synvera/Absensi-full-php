@@ -1,26 +1,17 @@
-<table>
-	<tr>
-		<td colspan="2" bgcolor="#191414"><font color="#FFFFFF"><strong>SPOTIFY · DEVELOPER SESSION</strong><br><strong>TOP TRACKS</strong> yang menemani developer pertama merangkai fondasi awal AbsensiKu</font></td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="#808080"><font color="#FFFFFF"><a href="https://open.spotify.com/search/About%20You"><font color="#FFFFFF"><strong>01 · About You</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/About%20You"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="#674B59"><font color="#FFFFFF"><a href="https://open.spotify.com/search/The%20Cure"><font color="#FFFFFF"><strong>02 · The Cure</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/The%20Cure"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="#535353"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Heaven"><font color="#FFFFFF"><strong>03 · Heaven</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Heaven"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="#585252"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Abadi"><font color="#FFFFFF"><strong>04 · Abadi</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Abadi"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="#9F0000"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta"><font color="#FFFFFF"><strong>05 · Tunggulah Aku Di Jakarta</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="#0020C8"><font color="#FFFFFF"><a href="https://open.spotify.com/search/Jatuh%20Suka"><font color="#FFFFFF"><strong>06 · Jatuh Suka</strong></font></a> &nbsp; | &nbsp; <a href="https://open.spotify.com/search/Jatuh%20Suka"><font color="#FFFFFF">Cari di Spotify</font></a></font></td>
-	</tr>
-</table>
+### 🎵 SPOTIFY · DEVELOPER SESSION
+> **TOP TRACKS** yang menemani developer pertama merangkai fondasi awal AbsensiKu
+
+[![01 · About You](https://img.shields.io/badge/01%20%C2%B7%20About%20You-Cari%20di%20Spotify-808080?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/About%20You)
+
+[![02 · The Cure](https://img.shields.io/badge/02%20%C2%B7%20The%20Cure-Cari%20di%20Spotify-674B59?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/The%20Cure)
+
+[![03 · Heaven](https://img.shields.io/badge/03%20%C2%B7%20Heaven-Cari%20di%20Spotify-535353?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Heaven)
+
+[![04 · Abadi](https://img.shields.io/badge/04%20%C2%B7%20Abadi-Cari%20di%20Spotify-585252?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Abadi)
+
+[![05 · Tunggulah Aku Di Jakarta](https://img.shields.io/badge/05%20%C2%B7%20Tunggulah%20Aku%20Di%20Jakarta-Cari%20di%20Spotify-9F0000?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta)
+
+[![06 · Jatuh Suka](https://img.shields.io/badge/06%20%C2%B7%20Jatuh%20Suka-Cari%20di%20Spotify-0020C8?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/search/Jatuh%20Suka)
 
 *Warna mengikuti palet yang diberikan; abu-abu untuk About You menggunakan `#808080` sebagai representasi abu-abu netral. Tautan membuka hasil pencarian Spotify karena artis/tautan track spesifik belum dicantumkan.*
 
