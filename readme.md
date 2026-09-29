@@ -1,3 +1,15 @@
+| **SPOTIFY · DEV SESSION** | **6 TRACKS** |
+|:--|--:|
+| **Soundtrack tahap awal AbsensiKu** | Diputar saat fondasi pertama dirangkai |
+| [01 · About You](https://open.spotify.com/search/About%20You) | [Cari di Spotify](https://open.spotify.com/search/About%20You) |
+| [02 · The Cure](https://open.spotify.com/search/The%20Cure) | [Cari di Spotify](https://open.spotify.com/search/The%20Cure) |
+| [03 · Heaven](https://open.spotify.com/search/Heaven) | [Cari di Spotify](https://open.spotify.com/search/Heaven) |
+| [04 · Abadi](https://open.spotify.com/search/Abadi) | [Cari di Spotify](https://open.spotify.com/search/Abadi) |
+| [05 · Tunggulah Aku Di Jakarta](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta) | [Cari di Spotify](https://open.spotify.com/search/Tunggulah%20Aku%20Di%20Jakarta) |
+| [06 · Mantan Terindah](https://open.spotify.com/search/Mantan%20Terindah) | [Cari di Spotify](https://open.spotify.com/search/Mantan%20Terindah) |
+
+*Catatan soundtrack developer pertama. Tautan membuka hasil pencarian Spotify karena artis/tautan lagu spesifik belum dicantumkan.*
+
 # AbsensiKu
 
 Aplikasi absensi siswa berbasis PHP dan MySQL/MariaDB. Aplikasi ini masih berada pada tahap awal: antarmuka belum mendapatkan desain CSS khusus dan masih berupa HTML sederhana dengan logika PHP. Beberapa elemen memakai style inline dasar, tetapi belum ada sistem desain atau stylesheet untuk tampilan yang konsisten. Aplikasi menyediakan halaman untuk melihat status kehadiran hari ini, mengelola daftar siswa, mencatat absensi, dan mencetak rekapitulasi.
