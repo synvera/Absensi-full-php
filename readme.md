@@ -168,7 +168,7 @@ Dari direktori utama proyek:
 php -S localhost:8000
 ```
 
-Buka [http://localhost:8000](http://localhost:8000) di browser. Halaman login aplikasi adalah `index.php`.
+Buka <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> di browser. Halaman login aplikasi adalah `index.php`.
 
 ## Panduan penggunaan
 
@@ -192,22 +192,36 @@ Dashboard menampilkan catatan untuk tanggal hari ini. Di halaman **Laporan Absen
 
 ## Catatan untuk tim sebelum digunakan
 
-Temuan berikut terlihat dari kode saat dokumentasi ini dibuat dan perlu ditangani sebelum aplikasi dianggap siap untuk penggunaan bersama:
+Proyek ini adalah versi pertama dengan fondasi dasar yang telah dibuat oleh developer pertama: login, pengelolaan data siswa, pencatatan absensi, dashboard, dan rekap sederhana. Tugas tim berikutnya adalah meninjau fondasi tersebut, menyepakati arah pengembangan, lalu menambahkan perbaikan atau fitur secara bertahap. Usulan di bawah merupakan bahan diskusi, bukan daftar pekerjaan yang wajib langsung dikerjakan.
 
-- **Skrip database perlu diperbaiki.** Selain masalah sintaks dan typo kolom di atas, skema absensi belum membatasi kombinasi siswa dan tanggal agar unik. Logika aplikasi mengandalkan pengecekan sebelum insert, jadi pengiriman bersamaan berpotensi membuat catatan ganda.
-- **Tanggal absensi belum konsisten.** Formulir mengirim tanggal yang dipilih, tetapi daftar siswa pada `input_absen.php` saat ini membaca status untuk tanggal hari ini. Ini dapat menampilkan pilihan yang keliru saat mengisi tanggal lain.
-- **Tautan autentikasi belum konsisten.** Form login berada di `index.php`, tetapi validasi sesi di `data_siswa.php` mengarahkan ke `login.php`. Selain itu, tautan logout mengarah ke `logout.php` di direktori utama, sementara file yang tersedia adalah `proses/logout.php`.
-- **Pemeriksaan sesi belum merata.** `data_siswa.php` memeriksa sesi, tetapi dashboard, input absensi, dan laporan belum melakukan pemeriksaan yang sama. Jangan membuka aplikasi ke jaringan publik sebelum akses tiap halaman dilindungi.
-- **Kredensial perlu dikelola ulang.** Konfigurasi koneksi saat ini berisi kredensial database, sedangkan contoh login menyimpan password biasa. Gunakan konfigurasi lokal yang tidak dikomit, hash password, dan ganti semua kredensial contoh sebelum menyimpan data sungguhan.
-- **Verifikasi data diperlukan.** Pastikan NIS unik dan tidak kosong jika aturan kelas mengharuskannya; skema saat ini belum menetapkan batasan tersebut.
+### Agenda diskusi
 
-### Prioritas tindak lanjut
-Mohon luangkan waktu untuk benar-benar melihat dan memeriksa keseluruhan proyek ini secara saksama. Tolong identifikasi secara kritis apa saja yang masih kurang dan evaluasi bagian mana saja yang harus dimodifikasi atau ditingkatkan. Pengecekan dari teman-teman sangat krusial sebelum kita melangkah lebih jauh!
+1. **Arsitektur database**
+	- Apakah struktur tabel siswa, sekretaris, dan absensi sudah sesuai dengan alur kerja yang disepakati?
+	- Aturan data apa yang perlu ditetapkan, misalnya NIS harus unik, satu siswa hanya memiliki satu catatan per tanggal, serta hubungan dan penghapusan data absensi ketika data siswa berubah?
+	- Apakah ke depannya perlu mendukung kelas/rombel, tahun ajaran, lebih dari satu petugas, atau riwayat perubahan absensi?
+	- Sebelum database digunakan bersama, tinjau dan uji `config/database.sql`. Saat ini masih ada komentar `//` yang bukan sintaks komentar SQL dan typo `pasword` pada perintah `INSERT`; keduanya perlu dibereskan. Pertimbangkan juga batasan unik dan aturan integritas data setelah kebutuhan disepakati.
 
-1. Perbaiki dan uji skrip SQL pada database kosong.
-2. Samakan rute login/logout dan terapkan pemeriksaan sesi ke semua halaman internal.
-3. Gunakan tanggal pilihan pada query daftar absensi, lalu uji input untuk hari ini dan tanggal lain.
-4. Tambahkan validasi data dan kebijakan keamanan kredensial sebelum penggunaan dengan data siswa nyata.
-5. Ambil empat screenshot untuk folder `docs/screenshots/` setelah alur utama selesai diuji.
-6. Tinjauan & Modifikasi Bersama (Team Review): Setelah poin 1-5 berjalan, lakukan simulasi penggunaan secara menyeluruh. Catat setiap bug, fitur yang terlewat, atau alur yang dirasa kurang pas, lalu segera diskusikan modifikasi apa yang harus kita terapkan.
-7. Kedepankan kominkasi dan dokumentasi dalam pembuatan project ini agar tidak `Misunderstanding`
+2. **Arah desain dan struktur website**
+	- Desain visual/CSS belum dimulai. Pengembangan desain sebaiknya menunggu persetujuan guru agar warna, tata letak, identitas, dan gaya tampilan sesuai arahan.
+	- Sambil menunggu persetujuan, tim dapat membahas struktur navigasi, urutan alur kerja, tampilan tabel/formulir, serta kebutuhan penggunaan di desktop dan ponsel tanpa menetapkan desain final.
+	- Setelah desain disetujui, sepakati komponen atau aturan tampilan bersama agar halaman login, dashboard, formulir, dan laporan terasa konsisten.
+
+3. **Fitur yang mungkin ditambahkan**
+	- Penyuntingan data siswa dan koreksi absensi dengan konfirmasi serta riwayat perubahan.
+	- Filter laporan berdasarkan tanggal, kelas, atau rentang waktu, dan pilihan ekspor yang dibutuhkan tim.
+	- Ringkasan jumlah hadir/sakit/izin/alpa dan indikator siswa yang belum diabsen.
+	- Validasi input, pembatasan akses semua halaman internal, serta pengelolaan kredensial yang lebih aman.
+	- Fitur lain berdasarkan masukan guru dan kebutuhan pengguna.
+
+	Prioritaskan fitur berdasarkan manfaat dan waktu yang tersedia. Implementasikan hanya jika disepakati tim dan memungkinkan dari sisi kebutuhan, keamanan, serta kemampuan teknis; tidak semua usulan harus masuk ke versi berikutnya.
+
+4. **Uji alur yang sudah ada**
+	- Uji pembuatan database pada database baru dan pastikan koneksi pada `config/koneksi.php` sesuai lingkungan lokal.
+	- Periksa alur login/logout dan pastikan semua halaman internal menerapkan aturan akses yang disepakati.
+	- Uji absensi untuk tanggal hari ini maupun tanggal lain; saat ini formulir mengirim tanggal pilihan, tetapi daftar statusnya masih membaca tanggal hari ini.
+	- Simulasikan alur dari menambah siswa, mencatat absensi, meninjau dashboard, hingga mencetak laporan. Catat perilaku yang membingungkan atau hasil yang tidak sesuai.
+
+### Cara kerja tim
+
+Bahas dan sepakati kebutuhan bersama sebelum mengubah struktur database atau memulai desain final. Catat keputusan, penanggung jawab, dan hal yang masih perlu persetujuan guru. Setelah keputusan jelas, kerjakan perubahan kecil secara bertahap, uji alur terkait, lalu perbarui dokumentasi. Jaga komunikasi agar asumsi yang berbeda tidak berkembang menjadi kesalahpahaman.

@@ -3,7 +3,7 @@ session_start();
 
 // Validasi Keamanan
 if (!isset($_SESSION['email_sekretaris'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
