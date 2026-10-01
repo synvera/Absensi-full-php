@@ -25,11 +25,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['tambah_siswa'])) {
     }
 }
 
-// Opsional: Logika untuk menghapus siswa jika ada tombol hapus yang ditekan
+// Logika untuk menghapus siswa
 if (isset($_GET['hapus'])) {
     $id_hapus = $_GET['hapus'];
+    
+    // TAHAP 1: Hapus terlebih dahulu semua riwayat absensi siswa ini di tabel_absensi
+    mysqli_query($koneksi, "DELETE FROM tabel_absensi WHERE id_siswa = '$id_hapus'");
+    
+    // TAHAP 2: Setelah absennya bersih, baru hapus nama siswanya di tabel_siswa
     mysqli_query($koneksi, "DELETE FROM tabel_siswa WHERE id_siswa = '$id_hapus'");
-    header("Location: data_siswa.php"); // Refresh halaman
+    
+    // Refresh halaman agar tabel terupdate
+    header("Location: data_siswa.php"); 
+    exit();
 }
 ?>
 
@@ -58,8 +66,8 @@ if (isset($_GET['hapus'])) {
         <div>
             <h3>Tambah Siswa Baru</h3>
             <form method="POST" action="">
-                <input type="text" name="nis" placeholder="Nomor Induk Siswa (NIS)" required style="padding: 8px;">
-                <input type="text" name="nama_siswa" placeholder="Nama Lengkap Siswa" required style="padding: 8px; width: 300px;">
+                <input type="text" name="nis" placeholder="Nomor Induk Siswa (NIS)" required>
+                <input type="text" name="nama_siswa" placeholder="Nama Lengkap Siswa" required>
                 <button type="submit" name="tambah_siswa" class="btn-tambah">+ Tambah Siswa</button>
             </form>
         </div>

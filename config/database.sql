@@ -22,6 +22,31 @@ CREATE TABLE tabel_siswa (
     nama_siswa VARCHAR(100) NOT NULL
 );
 
+//tambahkan full data dummy siswa kelas untuk testing
+INSERT INTO tabel_siswa (nis, nama_siswa) VALUES
+('1001', 'Akmal Fahreza'),
+('1002', 'Allif Maulana Robbil Izza'),
+('1003', 'Ananda Try Anugrah'),
+('1004', 'Avichena Al-Khawarizmi'),
+('1005', 'El Zhar Al Ghifari'),
+('1006', 'Iman Yazi Suhmar Darkun'),
+('1007', 'Izzan Afresetya'),
+('1008', 'Listyo Shobri Wicaksono'),
+('1009', 'Maher Mucktar Balaka'),
+('1010', 'Mochammad Khahfi'),
+('1011', 'Muhammad Rizky Apriadi'),
+('1012', 'Muhammad Fakhri'),
+('1013', 'Muhammad Rizq Maulana'),
+('1014', 'Muhammad Rossy Fadliyanto'),
+('1015', 'Noval Aqiransah Ridho Mustofa'),
+('1016', 'Putra Darmawan Budi'),
+('1017', 'Raffida Fathiyya Ramadhania'),
+('1018', 'Rafi Izhar Rivaldi'),
+('1019', 'Regan Ali Ramadhan'),
+('1020', 'Reyhan Echa Pratama'),
+('1021', 'Rizna Azzahra Fahrudin'),
+('1022', 'Tegar Permana Putra');
+
 CREATE TABLE tabel_absensi (
     id_absen INT AUTO_INCREMENT PRIMARY KEY,
     tanggal DATE NOT NULL,

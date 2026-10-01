@@ -20,7 +20,7 @@ include 'config/koneksi.php';
     </style>
 </head>
 <body>
-    <header style="display: flex; justify-content: space-between; align-items: center;">
+    <header class="no-print" style="display: flex; justify-content: space-between; align-items: center;">
         <h1>Input Data Absen siswa</h1>
         <nav style="display: flex; gap: 15px;">
             <a href="dashboard.php">Dashboard Absensi</a>
@@ -46,14 +46,17 @@ include 'config/koneksi.php';
                 <th>No</th>
                 <th>NIS</th>
                 <th>Nama Siswa</th>
-                <th>Sakit</th>
-                <th>Izin</th>
-                <th>Alfa</th>
+                <th style="text-align: center;">Hadir</th>
+                <th style="text-align: center;">Sakit</th>
+                <th style="text-align: center;">Izin</th>
+                <th style="text-align: center;">Alfa</th>
             </tr>
         </thead>
         <tbody>
             <?php
+            // TAMBAHAN LOGIKA: Menambahkan SUM untuk status 'Hadir'
             $query = "SELECT tabel_siswa.nis, tabel_siswa.nama_siswa,
+                      SUM(CASE WHEN tabel_absensi.status = 'Hadir' THEN 1 ELSE 0 END) AS total_hadir,
                       SUM(CASE WHEN tabel_absensi.status = 'Sakit' THEN 1 ELSE 0 END) AS total_sakit,
                       SUM(CASE WHEN tabel_absensi.status = 'Izin' THEN 1 ELSE 0 END) AS total_izin,
                       SUM(CASE WHEN tabel_absensi.status = 'Alpa' THEN 1 ELSE 0 END) AS total_alfa
@@ -71,6 +74,7 @@ include 'config/koneksi.php';
                     <td><?php echo $no++; ?></td>
                     <td><?php echo $data['nis']; ?></td>
                     <td><?php echo $data['nama_siswa']; ?></td>
+                    <td><b><?php echo $data['total_hadir']; ?></b></td>
                     <td style="text-align: center;"><b><?php echo $data['total_sakit']; ?></b></td>
                     <td style="text-align: center;"><b><?php echo $data['total_izin']; ?></b></td>
                     <td style="text-align: center;"><b><?php echo $data['total_alfa']; ?></b></td>
